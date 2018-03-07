@@ -24,7 +24,8 @@
 
 // 5. Components
 @import
-  'components/button';
+  'components/button',
+  'components/inputs';
 
 // 6. Page-specific styles
 @import
@@ -33,3 +34,7 @@
 // 7. Themes
 @import
   'themes/default';
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
