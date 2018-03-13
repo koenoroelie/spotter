@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root to: 'users#show'
+  root to: 'users#login'
   resource :user
 end

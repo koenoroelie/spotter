@@ -1,5 +1,9 @@
 @charset 'UTF-8';
 
+// 0. Bootstrap wordt als eerste geimporteerd zodat de stijl gemakkelijk overschreven kan worden.
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 // 1. Configuration and helpers
 @import
   'abstracts/variables',
@@ -29,6 +33,7 @@
 
 // 6. Page-specific styles
 @import
+  'pages/login',
   'pages/home';
 
 // 7. Themes
@@ -36,5 +41,3 @@
   'themes/default';
 
 
-@import "bootstrap-sprockets";
-@import "bootstrap";

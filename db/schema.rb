@@ -19,13 +19,6 @@ ActiveRecord::Schema.define(version: 20180306102322) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "trainings_users", id: false, force: :cascade do |t|
-    t.integer "training_id"
-    t.integer "user_id"
-    t.index ["training_id"], name: "index_trainings_users_on_training_id"
-    t.index ["user_id"], name: "index_trainings_users_on_user_id"
-  end
-
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email"

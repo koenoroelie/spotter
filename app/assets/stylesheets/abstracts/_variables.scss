@@ -22,10 +22,6 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 /// @type Color
 $text-color: rgb(34, 34, 34) !default;
 
-/// Main brand color
-/// @type Color
-$brand-color: rgb(229, 0, 80) !default;
-
 /// Light grey
 /// @type Color
 $light-grey: rgb(237, 237, 237) !default;
@@ -38,17 +34,12 @@ $mid-grey: rgb(153, 153, 153) !default;
 /// @type Color
 $dark-grey: rgb(68, 68, 68) !default;
 
-
-
-
+$primary-orange: #ff481a;
+$secundary-orange: #ff6c3c;
 
 /// Container's maximum width
 /// @type Length
 $max-width: 1180px !default;
-
-
-
-
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
@@ -58,11 +49,6 @@ $breakpoints: (
   'medium': 768px,
   'large': 1024px,
 ) !default;
-
-
-
-
-
 
 /// Relative or absolute URL where all assets are served from
 /// @type String
