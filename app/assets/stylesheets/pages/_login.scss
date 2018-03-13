@@ -1,0 +1,27 @@
+.login{
+
+  .logo{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    color: #f9521c;
+    margin: 50px auto;
+  }
+
+  h1{
+    margin-top: 100px;
+  }
+
+  .submit{
+    width: 100%;
+    bottom:50px;
+    left: 0px;
+    position: fixed; 
+    margin: 0 auto;
+    text-align: center;
+    button{
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -6,6 +6,8 @@
  * Set up a decent box model on the root element
  */
 html {
+  min-height: 100%;
+  position: relative;
   box-sizing: border-box;
 }
 
@@ -36,7 +38,7 @@ body{
  */
 a {
   font-family: Palanquin;
-  font-size: 15px;
+  font-size: 32px;
   font-weight: 600;
   color: $primary-orange;
   text-decoration: underline;
