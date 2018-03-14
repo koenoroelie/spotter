@@ -11,7 +11,7 @@ class UsersController < ApplicationController
 
   end
 
-  def home
+  def dashboard
 
   end
 
