@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get 'users/trainingindex'
   get 'users/diet'  
   get 'users/settings'
+  get 'users/broscience'
 end
