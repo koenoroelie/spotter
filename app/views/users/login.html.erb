@@ -11,11 +11,8 @@
 
   <div class="submit">
 
-    
-    <%= link_to '<button type="button">Inloggen</button>'.html_safe, users_dashboard_path %>
+    <%= link_to '<button type="button" class="button-primary">Inloggen</button>'.html_safe, users_dashboard_path %> <br> 
 
-    <button class="button-primary">Inloggen</button> <br/>
-
-    <a href="">Ik heb nog geen account</a>
+    <%= link_to 'Ik heb nog geen account', registrations_welcome_path %>
   </div>
 </div>
