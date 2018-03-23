@@ -1,2 +1,27 @@
-<h1>Registrations#intro</h1>
-<p>Find me in app/views/registrations/intro.html.erb</p>
+<div class="introduction">
+
+  <%= render 'progress' %>
+
+  <h1>Introductie</h1>
+  <h3>Laten we beginnen met een introductie. <br>
+Wie ben je en wat zijn je belangrijkste doelen?</h3>
+
+  <h2> Jouw Roepnaam</h2>
+
+  <input type="text">
+
+  <h2>Jouw Gender</h2>
+
+  <div class="gender-option text-center"> <input type="radio" name="gender" value="male"> Man </div>
+  <div class="gender-option text-center"> <input type="radio" name="gender" value="female"> Vrouw </div>
+  <div class="gender-option text-center"> <input type="radio" name="gender" value="other"> Anders </div>
+
+  <div class="submit">
+
+  <%= link_to '<button type="button" class="button-primary">Volgende stap</button>'.html_safe, registrations_goals_path %> <br> 
+
+  <%= link_to 'Overslaan', registrations_goals_path %>
+
+  </div>
+
+</div>

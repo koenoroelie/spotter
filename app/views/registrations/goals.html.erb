@@ -1,2 +1,30 @@
-<h1>Registrations#goals</h1>
-<p>Find me in app/views/registrations/goals.html.erb</p>
+<div class="goals">
+
+  <%= render 'progress' %>
+
+  <h1>Jouw Doel</h1>
+  <h3>Kies maximaal 2 doelen</h3>
+
+<label class="container"> Afvallen
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container"> Sterker worden
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container"> Spier opbouwen
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+
+  <div class="submit">
+    <%= link_to '<button type="button" class="button-primary">Volgende stap</button>'.html_safe, registrations_age_path %> <br> 
+
+    <%= link_to 'Overslaan', registrations_age_path %>
+  </div>
+
+</div>

@@ -2,4 +2,16 @@
   
   <%= render 'progress' %>
 
+  <h1>Welkom!</h1>
+
+  <h3>Om je een passend advies te geven over hoe je nu verder moet, leg ik je een aantal vragen voor. Als je hier nu geen zin in hebt kun je dit gedeelte overslaan en later invullen.</h3>
+
+  <div class="submit">
+
+    <%= link_to '<button type="button" class="button-primary">Start je Onboarding</button>'.html_safe, registrations_intro_path %> <br> 
+
+    <%= link_to '<button type="button" class="button-secundary">Informatie later invullen</button>'.html_safe, users_dashboard_path %>
+
+  </div>
+
 </div>
