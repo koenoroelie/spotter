@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get 'users/dashboard'
   get 'users/notions'
   get 'users/trainingindex'
+  get 'users/trainingshow'
   get 'users/diet'  
   get 'users/settings'
   get 'users/broscience'

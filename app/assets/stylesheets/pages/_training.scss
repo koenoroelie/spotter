@@ -1,0 +1,35 @@
+.trainingindex{
+  .trainingblock{
+    @extend .contentblock;
+    height: 250px;
+    text-align: left;
+    h2{
+      max-width: 100%;
+    }
+    a{
+      float: left;
+    }
+  }
+}
+
+.trainingshow{
+
+  .trainingblock{
+  @extend .contentblock;
+  height: 250px;
+  text-align: left;
+
+    h2{
+      float: none;
+    }
+    h3{
+      max-width: 100%;
+      float: none;
+      text-align: left;
+      margin-top: 20px;
+    }
+    a{
+      float: left;
+    }
+  }
+}
