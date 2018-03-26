@@ -3,11 +3,36 @@
     @extend .contentblock;
     height: 250px;
     text-align: left;
+    position: relative;
+
     h2{
       max-width: 100%;
+      float: none;
+      padding-left: 30px;
+    }
+    h3{
+      float: none;
+      text-align: left;
+      margin-top: 50px;
+      max-width: 100%;
+      padding-left: 30px;
     }
     a{
       float: left;
+      color: $primary-grey;
+      text-decoration: none;
+    }
+
+    .trainingdetails{
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      h2{
+        float: right;
+        padding: 10px;
+        background: #f1f5f8;
+      }
     }
   }
 }
@@ -21,9 +46,9 @@
 
     h2{
       float: none;
+      max-width: 100%;
     }
     h3{
-      max-width: 100%;
       float: none;
       text-align: left;
       margin-top: 20px;
