@@ -9,6 +9,17 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <script>
+        function ti() {
+            var fP = document.getElementById('fPrice').innerHTML;
+            var tP = document.getElementById('tPrice').innerHTML;
+
+            if (fP != '' && tP != '')
+                window.location.replace(window.location.href + '?min_Price=' + fP + '&max_Price=' + tP);
+        }
+    </script>
+    
   </head>
 
   <body>

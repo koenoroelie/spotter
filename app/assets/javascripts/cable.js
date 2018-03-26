@@ -11,3 +11,5 @@
   App.cable = ActionCable.createConsumer();
 
 }).call(this);
+
+var rng = document.querySelector("input");

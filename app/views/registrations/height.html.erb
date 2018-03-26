@@ -1,2 +1,34 @@
-<h1>Registrations#height</h1>
-<p>Find me in app/views/registrations/height.html.erb</p>
+<div class="level">
+
+  <%= render 'progress' %>
+
+  <h1>Dieet</h1>
+  <h3>Jouw lengte in centimeters</h3>
+
+  <div class="slidercontainer">
+
+    <div style="text-align: center;">
+      <label id="fPrice"></label>
+    </div>
+
+      <input
+        class="slider"
+        id="fromPrice"
+        type="range"
+        min="100"
+        max="220"
+        step="1"
+        value="160"
+        data-orientation="vertical"
+        oninput="document.getElementById('fPrice').innerHTML = this.value"
+      >
+
+  </div>
+
+  <div class="submit">
+    <%= link_to '<button type="button" class="button-primary">Volgende stap</button>'.html_safe, registrations_weight_path %> <br> 
+
+    <%= link_to 'Overslaan', registrations_weight_path %>
+  </div>
+
+</div>

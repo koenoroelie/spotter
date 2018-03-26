@@ -16,3 +16,63 @@ input[type=text]{
   text-align: left;
   color: #9ca4b4;
 }
+
+select{
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(249, 82, 28, 0.04), 0 2px 4px 0 rgba(28, 38, 54, 0.02), inset 0 1px 2px 0 rgba(29, 47, 65, 0.08);
+  padding-left: 25px;
+  height: 110px;
+  width: 100%;
+  margin-top: 50px;
+  font-size:35px;
+  color: #9ca4b4;
+}
+
+.slidercontainer{
+  .slider{
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 150px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+
+  .slider::-webkit-slider-thumb {
+      -webkit-appearance: none; /* Override default look */
+      appearance: none;
+      width: 25px; /* Set a specific slider handle width */
+      height: 150px; /* Slider handle height */
+      background: #ff643b; /* Green background */
+      cursor: pointer; /* Cursor on hover */
+  }
+
+  .slider::-moz-range-thumb {
+      width: 25px; /* Set a specific slider handle width */
+      height: 150px; /* Slider handle height */
+      background: #ff643b; /* Green background */
+      cursor: pointer; /* Cursor on hover */
+  }
+
+  label{
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 #f2f5f8;
+    background-image: linear-gradient(to bottom, #f2f5f8, #ffffff);
+    border: solid 1px #d5d9e3;
+    width: 20%;
+    height: 150px;
+    text-align: center;
+    font-size: 80px;
+    margin: 150px auto;
+    color: #344157;
+  }
+}
+
