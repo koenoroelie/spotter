@@ -2,15 +2,40 @@
   <div> 
     <ul class="top-nav">
       <li class="text-left"> <%= link_to image_tag("science3x.png"), users_broscience_path %></li>
-      <li class="text-center"> <h2> <%= image_tag("favicon.png") %> Spotter </h2> </li>
+
+      <li class="text-center"> 
+        <h2> <%=image_tag("favicon.png")%> Spotter </h2>
+      </li>
+
       <li class="text-right"> <%= link_to image_tag("settings3x.png"), users_settings_path %></li>
     </ul>
   </div>
 
   <ul class="bottom-nav">
-    <li> <%= link_to 'Home', users_dashboard_path %> </li>
-    <li> <%= link_to 'Training', users_trainingindex_path %> </li>
-    <li> <%= link_to 'Dieet', users_diet_path %> </li>
-    <li> <%= link_to 'Begrippen', users_notions_path %> </li>
+
+
+    <% if params[:action] == "dashboard" && params[:controller] == "users" %>
+      <li class="active"> <%= link_to 'Home', users_dashboard_path, class: "active" %> </li>
+    <% else %>
+      <li> <%= link_to 'Home', users_dashboard_path %> </li>
+    <% end %>
+
+    <% if params[:action] == "trainingindex" && params[:controller] == "users" %>
+      <li class="active"> <%= link_to 'Training', users_trainingindex_path, class: "active" %> </li>
+    <% else %>
+      <li> <%= link_to 'Training', users_trainingindex_path %> </li>
+    <% end %>
+
+    <% if params[:action] == "diet" && params[:controller] == "users" %>
+      <li class="active"> <%= link_to 'Dieet', users_diet_path, class: "active" %> </li>
+    <% else %>
+      <li> <%= link_to 'Dieet', users_diet_path %> </li>
+    <% end %>
+
+    <% if params[:action] == "notions" && params[:controller] == "users" %>
+      <li class="active"> <%= link_to 'Begrippen', users_notions_path, class: "active" %> </li>
+    <% else %>
+      <li> <%= link_to 'Begrippen', users_notions_path %> </li>
+    <% end %>
   </ul>
 </div>
