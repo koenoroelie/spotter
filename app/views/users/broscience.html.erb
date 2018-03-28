@@ -1,8 +1,35 @@
+<%= render 'navigation' %>
+
+<div class="intro">
+  <h1> Broscience </h1> 
+</div>
+
 <div class="broscience">
   
-  <%= render 'navigation' %>
+  <input type="text" placeholder="Zoek een begrip">
 
-  <div class="intro">
-    <h1> Broscience </h1> 
-  </div>
+  <div class="broblock">
+    <div class="premise">
+      <h2 class="false">Bro</h2>
+      <h3>Afvallen heeft veel te maken met stofwisseling</h3>
+    </div>
+    <div class="explanation">
+     <p>
+       Dit is <b>niet waar</b>. Het verschil tussen een "snelle" en "langzame" stofwisseling is hooguit 300kcal per dag.
+     </p>
+   </div>
+ </div>
+
+  <div class="broblock">
+   <div class="premise">
+    <h2 class="true">Science</h2>
+    <h3>Een eiwitshake drinken na de training is een must.</h3>
+   </div>
+   <div class="explanation">
+     <p>
+       Dit is <b>deels waar</b>. Het is verstandig om na een intensieve training eiwitten te consumeren. Dit hoeft echter niet direct na de training en ook niet per se in de vorm van een eiwitshake.
+     </p>
+    </div>
+ </div>
+
 </div>

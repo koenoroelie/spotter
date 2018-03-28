@@ -45,4 +45,14 @@
       }
     }
   }
+
+  .submit{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+    bottom: 0;
+    padding: 70px 0;
+
+    button{
+      margin: 0;
+    }
+  }
 }
