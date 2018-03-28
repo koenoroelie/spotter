@@ -1,10 +1,33 @@
-<div class="diet">
-  
-  <%= render 'navigation' %>
+<%= render 'navigation' %>
 
-  <div class="intro">
-    <h1> Dieet </h1> 
+<div class="intro">
+  <h1> Dieet </h1> 
+</div>
+
+<div class="diet">
+
+  <div class="dietblock">
+    <h1>2500 <span>Kcal</span></h1>
+    <h1>123g <span>Eiwitten</span></h1>
+    <h1>180g <span>Koolhydraten</span></h1>
+    <h1>60g <span>vetten</span></h1>
   </div>
 
+  <div class="userstatsblock">
+    <h2>De bovenstaande waarden zijn gebasseerd op de volgende gegevens over jou</h2> <br>
+    <h3>Doel(en): <span>Afvallen</span></h3>
+    <h3>Leeftijd: <span>22 jaar</span></h3>
+    <h3>Lengte: <span>180 cm</span></h3>
+    <h3>Gewicht: <span>80 kg</span></h3>
+    <h3>Activiteit: <span>Matig</span></h3>
+  </div>
+
+  <div class="goalblock">
+    <h3>Deze waarden zijn voor het berekend op: <b> 22-3-2018 </b>. Het wordt aangeraden om na drie maanden (<b>22-6-2018</b>) een herberekening uit te voeren.</h3> 
+  </div>
+
+  <div class="submit">
+    <%= link_to '<button type="button" class="button-primary">Herberekenen </button>'.html_safe, root_path %> <br> 
+  </div>
 
 </div>
