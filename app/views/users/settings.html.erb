@@ -1,13 +1,62 @@
-<div class="Settings">
+<div class="settings">
   
   <%= render 'navigation' %>
 
   <div class="intro">
     <h1> Instellingen </h1> 
   </div>
+  
+  <h3>Training Instellingen</h3>
+  <div class="settingsblock">
+    <h2>Lichamelijke activiteit</h2>
+    <%= link_to image_tag("arrow2x.png") + "Gemiddeld", registrations_level_path %>
+  </div>
 
-   <div class="submit">
-    <%= link_to '<button type="button" class="button-primary">Uitloggen</button>'.html_safe, root_path %> <br> 
+  <div class="settingsblock">
+    <h2>Doel(en)</h2>
+    <%= link_to image_tag("arrow2x.png") + "Afvallen", registrations_goals_path %>
+  </div>
+
+  <div class="settingsblock">
+    <h2>Huidige Niveau</h2>
+    <%= link_to image_tag("arrow2x.png") + "Beginner", registrations_level_path %>
+  </div>
+
+  <h3>Dieet Instellingen</h3>
+  <div class="settingsblock">
+    <h2>Leeftijd</h2>
+    <%= link_to image_tag("arrow2x.png") + "22 jaar", registrations_age_path %>
+  </div>
+
+  <div class="settingsblock">
+    <h2>Lengte</h2>
+    <%= link_to image_tag("arrow2x.png") + "180 cm", registrations_height_path %>
+  </div>
+
+  <div class="settingsblock">
+    <h2>Gewicht</h2>
+    <%= link_to image_tag("arrow2x.png") + "80 kg", registrations_weight_path %>
+  </div>
+
+  <div class="settingsblock">
+    <h2>Activiteit</h2>
+    <%= link_to image_tag("arrow2x.png") + "Matig", registrations_activity_path %>
+  </div>
+
+  <h3>Overige Instellingen</h3>
+  <div class="settingsblock">
+    <h2>Roepnaam</h2>
+    <%= link_to image_tag("arrow2x.png") + "Henk", registrations_intro_path %>
+  </div>
+
+  <div class="settingsblock">
+    <h2>Gender</h2>
+    <%= link_to image_tag("arrow2x.png") + "Man", registrations_intro_path %>
+  </div>
+
+
+  <div class="submit">
+    <%= link_to '<button type="button" class="button-secundary">Uitloggen</button>'.html_safe, root_path %> <br> 
   </div>
  
 </div>
