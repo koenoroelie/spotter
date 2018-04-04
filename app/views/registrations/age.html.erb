@@ -11,7 +11,7 @@
   <div class="slidercontainer">
 
     <div style="text-align: center;">
-      <label id="fPrice"></label>
+      <label id="fPrice">56</label>
     </div>
 
       <input
@@ -23,6 +23,7 @@
         step="1"
         value="56"
         data-orientation="vertical"
+        onload="document.getElementById('fPrice').innerHTML = this.value"
         oninput="document.getElementById('fPrice').innerHTML = this.value"
       >
 

@@ -1,10 +1,32 @@
 <div class="activity">
 
-
   <div class="progress">
     <div class="logo"> <h2> <%= image_tag("favicon.png") %> Spotter </h2> </div>
     <div class="percent"> <p>62%</p> </div>
   </div>
+
+  <h1>Huidige Activiteit</h1>
+  <h3>Hoe vaak per week doe je aan lichamelijke inspanning van minimaal een uur?</h3>
+
+  <label class="container pull-left text-center">Geen activiteit <h3>0 keer per week</h3>
+    <input type="radio" name="radio">
+    <span class="checkmark"></span>
+  </label>
+
+  <label class="container pull-right text-center">Licht <h3>1-2 keer per week</h3>
+    <input type="radio" name="radio">
+    <span class="checkmark"></span>
+  </label>
+
+  <label class="container pull-left text-center">Gemiddeld <h3>3-5 keer per week</h3>
+    <input type="radio" name="radio">
+    <span class="checkmark"></span>
+  </label>
+
+  <label class="container pull-right text-center">Zwaar <h3>5+ keer per week</h3>
+    <input type="radio" name="radio">
+    <span class="checkmark"></span>
+  </label>
 
   <div class="submit">
     <%= link_to '<button type="button" class="button-primary">Volgende stap</button>'.html_safe, registrations_age_path %> <br> 
@@ -13,4 +35,4 @@
   </div>
 
 
-  </div>  
+</div>  
