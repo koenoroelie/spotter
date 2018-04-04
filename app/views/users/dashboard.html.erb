@@ -8,16 +8,69 @@
 
   <div class="contentblock">  
     <h2>Mijn huidige training</h2> 
-    <%= link_to("Hervat deze training", users_trainingshow_path) %>
+    <%= link_to("Kies een training", users_trainingshow_path) %>
+
+    <ul class="trainingblocks">
+      <li>
+        <h1>Training 1</h1>
+        <h3>Push</h3>
+        <div class="trainingdetails">
+          <h2 class="pull-left"> <%= image_tag 'exercise3x.png' %> 6 </h2>
+          <h2 class="pull-right"> <%= image_tag 'clock3x.png' %> 60 </h2>
+        </div>
+      </li>
+
+      <li>
+        <h1>Training 2</h1>
+        <h3>Pull</h3>
+        <div class="trainingdetails">
+          <h2 class="pull-left"> <%= image_tag 'exercise3x.png' %> 6 </h2>
+          <h2 class="pull-right"> <%= image_tag 'clock3x.png' %> 70 </h2>
+        </div>
+      </li>
+
+      <li>
+        <h1>Training 3</h1>
+        <h3>Legs</h3>
+        <div class="trainingdetails">
+          <h2 class="pull-left"> <%= image_tag 'exercise3x.png' %> 5 </h2>
+          <h2 class="pull-right"> <%= image_tag 'clock3x.png' %> 50 </h2>
+        </div>
+      </li>
+    </ul>
+
   </div>
 
   <div class="contentblock">  
     <h2>Mijn dieet</h2> 
-    <h3> Jouw KCAL metingen</h3>
+    <h3> Jouw dietaire waarden</h3>
+    
+    <ul>
+      <li><h1>2500</h1><h3>KCAL</h3></li>
+      <li><h1>120g</h1><h3>Eiwitten</h3></li>
+      <li><h1>180g</h1><h3>Koolhydraten</h3></li>
+      <li><h1>60g</h1><h3>Vetten</h3></li>
+    </ul>
+    
   </div>
 
   <div class="contentblock">  
     <h2>Broscience</h2> 
     <h3>Feiten van broeders</h3>
+    <div class="premise">
+      <h2 class="false">Bro</h2>
+      <h3>Afvallen heeft veel te maken met stofwisseling.</h3>
+    </div>
+  </div>
+
+  <div class="contentblock">  
+    <h2>Begrippen</h2> 
+    <h3>Een vreemd woord gehoord?</h3>
+
+    <div class="letterbox">
+      <ul>
+        <li> <h2>Rep(s)</h2> <p>Afkorting voor “repetitions”, oftewel het aantal herhalingen.</p></li>
+      </ul>
+    </div>
   </div>
 </div>
