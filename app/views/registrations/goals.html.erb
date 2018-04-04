@@ -1,25 +1,27 @@
 <div class="goals">
 
-  <%= render 'progress' %>
+  <div class="progress">
+    <div class="logo"> <h2> <%= image_tag("favicon.png") %> Spotter </h2> </div>
+    <div class="percent"> <p>37%</p> </div>
+  </div>
 
-  <h1>Jouw Doel</h1>
+  <h1>Jouw Doel(en)</h1>
   <h3>Kies maximaal 2 doelen</h3>
 
-<label class="container"> Afvallen
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label>
+  <label class="container"> Afvallen
+    <input type="checkbox" checked="checked">
+    <span class="checkmark"></span>
+  </label>
 
-<label class="container"> Sterker worden
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
+  <label class="container"> Sterker worden
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
 
-<label class="container"> Spier opbouwen
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-
+  <label class="container"> Spier opbouwen
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
 
   <div class="submit">
     <%= link_to '<button type="button" class="button-primary">Volgende stap</button>'.html_safe, registrations_level_path %> <br> 

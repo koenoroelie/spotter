@@ -1,6 +1,9 @@
 <div class="level">
 
-  <%= render 'progress' %>
+  <div class="progress">
+    <div class="logo"> <h2> <%= image_tag("favicon.png") %> Spotter </h2> </div>
+    <div class="percent"> <p>50%</p> </div>
+  </div>
 
   <h1>Jouw Huidige Niveau</h1>
   <h3>Dit is misschien niet de eerste keer dat je aan fitness doet of misschien ben je van nature gewoon sterk. In iedere geval moet het advies wel passen bij jouw huidige niveau. vandaar deze vragen.</h3>
@@ -31,9 +34,9 @@
 
 
   <div class="submit">
-    <%= link_to '<button type="button" class="button-primary">Volgende stap</button>'.html_safe, registrations_age_path %> <br> 
+    <%= link_to '<button type="button" class="button-primary">Volgende stap</button>'.html_safe, registrations_activity_path %> <br> 
 
-    <%= link_to 'Overslaan', registrations_age_path %>
+    <%= link_to 'Overslaan', registrations_activity_path %>
   </div>
 
 </div>

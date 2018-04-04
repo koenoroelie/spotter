@@ -1,2 +1,16 @@
-<h1>Registrations#activity</h1>
-<p>Find me in app/views/registrations/activity.html.erb</p>
+<div class="activity">
+
+
+  <div class="progress">
+    <div class="logo"> <h2> <%= image_tag("favicon.png") %> Spotter </h2> </div>
+    <div class="percent"> <p>62%</p> </div>
+  </div>
+
+  <div class="submit">
+    <%= link_to '<button type="button" class="button-primary">Volgende stap</button>'.html_safe, registrations_age_path %> <br> 
+
+    <%= link_to 'Overslaan', registrations_age_path %>
+  </div>
+
+
+  </div>  
