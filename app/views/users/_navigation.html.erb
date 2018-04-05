@@ -2,7 +2,7 @@
   <div> 
     <ul class="top-nav">
 
-      <% if params[:action] == "broscience" && params[:controller] == "users" %>
+      <% if params[:action] == "broscience" || params[:action] == "broorscience" && params[:controller] == "users" %>
         <li class="text-left"> <%= link_to image_tag("broscience-active3x.png"), users_broscience_path %></li>
       <% else %>
         <li class="text-left"> <%= link_to image_tag("science3x.png"), users_broscience_path %></li>
@@ -30,7 +30,7 @@
       <li> <%= link_to 'Home', users_dashboard_path %> </li>
     <% end %>
 
-    <% if params[:action] == "trainingindex" || params[:action] == "trainingshow"&& params[:controller] == "users" %>
+    <% if params[:action] == "trainingindex" || params[:action] == "trainingshow" || params[:action] == "trainingvideo" && params[:controller] == "users" %>
       <li class="active"> <%= link_to 'Training', users_trainingindex_path, class: "active" %> </li>
     <% else %>
       <li> <%= link_to 'Training', users_trainingindex_path %> </li>

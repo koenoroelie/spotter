@@ -49,15 +49,15 @@ select{
   .slider::-webkit-slider-thumb {
       -webkit-appearance: none; /* Override default look */
       appearance: none;
-      width: 25px; /* Set a specific slider handle width */
-      height: 150px; /* Slider handle height */
+      width: 40px; /* Set a specific slider handle width */
+      height: 180px; /* Slider handle height */
       background: #ff643b; /* Green background */
       cursor: pointer; /* Cursor on hover */
   }
 
   .slider::-moz-range-thumb {
-      width: 25px; /* Set a specific slider handle width */
-      height: 150px; /* Slider handle height */
+      width: 40px; /* Set a specific slider handle width */
+      height: 180px; /* Slider handle height */
       background: #ff643b; /* Green background */
       cursor: pointer; /* Cursor on hover */
   }
