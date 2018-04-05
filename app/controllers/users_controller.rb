@@ -7,6 +7,10 @@ class UsersController < ApplicationController
 
   end
 
+  def broorscience
+
+  end
+
   def diet
 
   end
@@ -33,5 +37,9 @@ class UsersController < ApplicationController
 
   def trainingshow
     
+  end
+
+  def trainingvideo
+
   end
 end
