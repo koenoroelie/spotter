@@ -1,17 +1,17 @@
 <!-- 
 TODO
-Broscience spel toevoegen. Linken vanuit home en broscience page.
 Spotter logo klikbaar naar home
-Blokken klikbaar maken -->
+videopagina placeholder vervangen -->
 
 
 <div class="dashboard">
 
   <%= render 'navigation' %>
 
-  <div class="contentblock">  
+  <div class="contentblock">
+    <a href="../users/trainingshow" class="fill-div">  
     <h2>Mijn huidige training</h2> 
-    <%= link_to("Kies een training", users_trainingshow_path) %>
+    <h3>Kies een training</h3>
 
     <ul class="trainingblocks">
       <li>
@@ -41,19 +41,23 @@ Blokken klikbaar maken -->
         </div>
       </li>
     </ul>
-
+    </a>
   </div>
 
   <div class="contentblock">  
+    <a href="../users/broscience" class="fill-div"> 
     <h2>Broscience</h2> 
     <h3>Feiten van broeders</h3>
     <div class="premise">
       <h2 class="false">Bro</h2>
       <h3>Afvallen heeft veel te maken met stofwisseling.</h3>
     </div>
+    </a>
   </div>
 
   <div class="contentblock">  
+
+    <a href="../users/notions" class="fill-div">
     <h2>Begrippen</h2> 
     <h3>Een vreemd woord gehoord?</h3>
 
@@ -62,9 +66,11 @@ Blokken klikbaar maken -->
         <li> <h2>Rep(s)</h2> <p>Afkorting voor “repetitions”, oftewel het aantal herhalingen.</p></li>
       </ul>
     </div>
+    </a>
   </div>
 
-  <div class="contentblock">  
+  <div class="contentblock"> 
+    <a href="../users/diet" class="fill-div">
     <h2>Mijn dieet</h2> 
     <h3> Jouw dietaire waarden</h3>
     <ul>
@@ -73,5 +79,11 @@ Blokken klikbaar maken -->
       <li><h1>180g</h1><h3>Koolhydraten</h3></li>
       <li><h1>60g</h1><h3>Vetten</h3></li>
     </ul>
+    </a>
   </div>
+
+  <div class="submit">
+    <%= link_to '<button type="button" class="button-primary">Speel het Broscience Spel!</button>'.html_safe, users_broorscience_path %> <br> 
+  </div>
+
 </div>
