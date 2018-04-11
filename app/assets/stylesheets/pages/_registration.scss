@@ -1,3 +1,25 @@
+.introduction{
+  h2{
+    font-family: Palanquin;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: #9ca4b4;
+    margin: 50px 0 40px;
+  }
+
+  .gender-option{
+    display: inline-block;
+    font-family: Palanquin;
+    font-size: 40px;
+    font-weight: 600;
+    background: $white;
+    width: 28%;
+    padding: 20px;
+    margin: 20px;
+  }
+}
+
 .progress{
   background: none;
   height: 150px;
@@ -42,7 +64,7 @@
       font-size: 22px;
       border-radius: 4px;
       box-shadow: 0 2px 4px 0 #f2f5f8, 0 2px 4px 0 rgba(255, 108, 60, 0.04);
-      background-color: #ffffff;
+      background-color: $white;
       border: solid 1px #edf0f4;
       height: auto;
   }
@@ -78,7 +100,7 @@
 
   /* When the checkbox is checked, add a blue background */
   .container input:checked ~ .checkmark {
-      background-color: #f9521c;
+      background-color: $primary-orange;
   }
 
   /* Create the checkmark/indicator (hidden when not checked) */
@@ -123,7 +145,7 @@
     user-select: none;
     border-radius: 4px;
     box-shadow: 0 2px 4px 0 #f2f5f8, 0 2px 4px 0 rgba(255, 108, 60, 0.04);
-    background-color: #ffffff;
+    background-color: $white;
     border: solid 1px #edf0f4;
   }
 
@@ -152,7 +174,7 @@
 
   /* When the radio button is checked, add a background */
   .container input:checked ~ .checkmark {
-    background-color: #f9521c;
+    background-color: $primary-orange;
   }
 
   /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -192,7 +214,7 @@
     user-select: none;
     border-radius: 4px;
     box-shadow: 0 2px 4px 0 #f2f5f8, 0 2px 4px 0 rgba(255, 108, 60, 0.04);
-    background-color: #ffffff;
+    background-color: $white;
     border: solid 1px #edf0f4;
   }
 

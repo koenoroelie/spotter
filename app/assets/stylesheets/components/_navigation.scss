@@ -3,7 +3,7 @@
   z-index: 9999;
   width: 100%;
   height: 220px;
-  background: #ff4b1e;
+  background: $primary-orange;
   top: 0;
   position: fixed;
 
@@ -13,7 +13,7 @@
   }
 
   h2{
-    color: #fff;
+    color: $white;
     font-family: 'Work Sans', sans-serif;
     font-size: 40px;
     font-weight: 600;
@@ -38,10 +38,10 @@
     li{
       float: left;
       width: 25%;
-      border-bottom: 10px solid #ff4b1e;
+      border-bottom: 10px solid $primary-orange;
 
       .active{
-        color: #fff;
+        color: $white;
       }
     }
 

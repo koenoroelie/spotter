@@ -17,7 +17,7 @@
 .button-primary{
   @extend .button;
   background: $primary-orange;
-  color: #fff;
+  color: $white;
 }
 
 .button-secundary{
@@ -30,7 +30,7 @@
 .button-disabled{
   @extend .button;
   background: #ffb7a3;
-  color: #fff;
+  color: $white;
 }
 
 .button-delete{

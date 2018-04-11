@@ -28,7 +28,7 @@ body{
   margin: 0 auto;
   height: 100%;
   max-width: 100%;
-  background-image: linear-gradient(to bottom, #ffffff, #f3ede3);
+  background-image: linear-gradient(to bottom, $white, #f3ede3);
   position: relative;
 
 }
@@ -49,6 +49,6 @@ a {
   }
 }
 
-.welcome, .introduction, .goals, .level, .age, .weight, .height, .notions, .diet, .broscience, .activity {
+.welcome, .introduction, .goals, .level, .age, .weight, .height, .notions, .diet, .broscience, .activity, .login {
   padding: 0 5%;
 }
